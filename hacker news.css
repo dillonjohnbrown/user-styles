@@ -1,0 +1,103 @@
+.pagetop :not(b),
+.pagetop :not(a:visited),
+.pagetop :not(a:hover),
+.pagetop :not(a:active),
+.pagetop :not(a:hover),
+.pagetop :not(span.pagetop) {
+	font-size: 8pt;
+}
+.pagetop {
+    color: #ff6600;
+}
+.pagetop a:hover {
+	color: #8F3901;
+}
+body,
+td,
+.title,
+.pagetop,
+.subtext,
+.comment,
+.yclinks,
+.comhead,
+.default {
+	font-family: -apple-system;
+}
+.comhead {
+	font-size: 10pt;
+}
+.yclinks {
+	color: #f6f6ef;
+	text-transform: uppercase;
+}
+.votearrow {
+	background: none;
+}
+.votearrow:after {
+	content: "\25B2";
+	position: relative;
+	display: block;
+	line-height: 0.9;
+	color: rgb(154,	154, 154);
+	font-size: 12px;
+}
+.title {
+	vertical-align: top;
+}
+.comment {
+	line-height: 1.3;
+}
+.spacer {
+	height: 7px !important;
+}
+#hnmain > tbody > tr:nth-child(1) table {
+	padding: 2px !important;
+}
+.athing > td:nth-child(3) > span > span > a {
+	font-size: 10pt;
+}
+/* Logo */
+#hnmain tbody tr td table tbody tr:not(.athing) td:first-of-type a:first-of-type  {
+	color: white;
+	border: 1px solid white;
+	padding: 0 4px;
+}
+#hnmain tbody tr td table tbody tr:not(.athing) td:first-of-type a:first-of-type:after {
+	content: "Y";
+	font-weight: 700;
+	font-size: 8pt;
+}
+#hnmain tbody tr td table tbody tr:not(.athing) td:not(.subtext) a img {
+	display: none;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #262626 !important;
+    }
+
+    body > center > table, input, textarea {
+        background-color: #222 !important;
+    }
+
+    body > center > table > tbody > tr:first-child > td {
+        background-color: #ff6600 !important;
+    }
+
+    /* Bright text */
+    td.title a:link, span.comment font, span.comment font a:link, u a:link, span.yclinks a:link, body:not([id]),
+    td:nth-child(2):not(.subtext) > a:link, input, textarea, p > a, a > u, .c00, .c00 a:link,
+    a[href="http://www.ycombinator.com/apply/"], a[href="https://www.ycombinator.com/apply/"] {
+        color: #ccc !important;
+    }
+
+    .admin td {
+        color: #aaa !important;
+    }
+
+    /* search box and comment box */
+    input, textarea {
+        border: 1px solid #828282 !important;
+    }
+}
